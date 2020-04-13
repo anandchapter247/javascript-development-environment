@@ -2,11 +2,13 @@
     "name": "javascript-development-environment",
     "version": "1.0.0",
     "description": "",
-    "main": "app.js",
+    "main": "srcServer.js",
+    "type": "module",
     "dependencies": {
         "babel-loader": "^8.1.0",
         "babel-preset-env": "^1.7.0",
         "babel-preset-latest": "^6.24.1",
+        "bundle": "^2.1.0",
         "cheerio": "^1.0.0-rc.3",
         "compression": "^1.7.4",
         "cross-env": "^7.0.2",
@@ -14,6 +16,7 @@
         "eslint": "^6.8.0",
         "eslint-plugin-import": "^2.20.2",
         "eslint-watch": "^6.0.1",
+        "express": "^4.17.1",
         "html-webpack-plugin": "^4.2.0",
         "jsdom": "^16.2.2",
         "json-schema-faker": "^0.5.0-rcv.24",
@@ -40,7 +43,6 @@
         "open:src": "node buildScripts/srcServer.js",
         "ngrok": "ngrok http 5000",
         "share": "npm-run-all --parallel open:src ngrok"
-
     },
     "repository": {
         "type": "git",
