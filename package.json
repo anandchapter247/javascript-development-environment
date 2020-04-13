@@ -35,7 +35,7 @@
         "webpack-md5-hash": "0.0.6"
     },
     "scripts": {
-        "prestart": "node buildScripts/startMessage.js",
+        "prestart": "babel-node buildScripts/startMessage.js",
         "start": "npm-run-all --parallel open:src ",
         "open:src": "node buildScripts/srcServer.js",
         "ngrok": "ngrok http 5000",
